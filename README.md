@@ -9,11 +9,11 @@ in this project i followedthe Airbnb website style , i used some packages for st
 - daisy UI 
  and some more for icons.
  ## Must have 
- -[ ] the app should have 2 categories one for rent and the other for sale.
- -[ ] the user can add new listing  only if he is member 
- -[ ] the user able to sign in by email or by google account .
- -[ ] possibility to upload pictures 
- -[ ] change profile details
+ - [ ] the app should have 2 categories one for rent and the other for sale.
+ - [ ] the user can add new listing  only if he is member 
+ - [ ] the user able to sign in by email or by google account .
+ - [ ] possibility to upload pictures 
+ - [ ] change profile details
  
  
 
