@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
+import logo from "../assets/pngegg.png";
 
 function Header() {
   const navigate = useNavigate();
@@ -8,11 +9,7 @@ function Header() {
   return (
     <div className="header">
       <div className="navbar container">
-        <img
-          className="header-icon"
-          src="https://freepikpsd.com/file/2019/10/airbnb-logo-white-png-4-Transparent-Images.png"
-          alt="air-bnb"
-        />
+        <img className="header-icon" src={logo} alt="air-bnb" />
 
         <div className="nav">
           <ul>
@@ -42,7 +39,7 @@ function Header() {
         <div
           className="profile"
           onClick={() => {
-            navigate("/profile");
+            navigate("/sign-in");
           }}
         >
           <Avatar />
