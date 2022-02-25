@@ -13,12 +13,13 @@ in this project i followedthe Airbnb website style , i used some packages for st
  - [ ] the user can add new listing  only if he is a member .
  - [ ] the user able to sign in by email or by google account .
  - [ ] possibility to upload pictures 
- - [ ] change profile details
+
  
 
 ## nice to have 
 - adding review and rating .
 - possibility to search for appartments by location .
+- change profile details
 
  
  
