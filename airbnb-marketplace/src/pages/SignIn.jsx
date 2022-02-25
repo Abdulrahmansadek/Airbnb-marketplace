@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import visibleIcon from "../assets/svg/visibilityIcon.svg";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -16,6 +17,23 @@ function SignIn() {
       [e.target.id]: e.target.value,
     }));
   };
+  const handleSignIn = async (e) => {
+    e.preventDefault();
+    try {
+      const auth = getAuth();
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      const user = userCredential.user;
+      if (user) {
+        navigate("/");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
 
   return (
     <>
@@ -26,7 +44,7 @@ function SignIn() {
               Sign in to your account
             </h2>
           </div>
-          <form className="mt-8 space-y-6">
+          <form className="mt-8 space-y-6" onSubmit={handleSignIn}>
             <div className="rounded-md shadow-sm -space-y-px">
               <div>
                 <input

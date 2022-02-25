@@ -39,7 +39,7 @@ function Header() {
         <div
           className="profile"
           onClick={() => {
-            navigate("/sign-in");
+            navigate("/profile");
           }}
         >
           <Avatar />

@@ -1,7 +1,45 @@
-import React from "react";
+import { useState } from "react";
+import { getAuth } from "firebase/auth";
+import { useNavigate, Link } from "react-router-dom";
 
 function Profile() {
-  return <div>Profile</div>;
+  const auth = getAuth();
+  const [userData, setUserData] = useState({
+    name: auth.currentUser.displayName,
+    email: auth.currentUser.email,
+  });
+  const { name, email } = userData;
+  const navigate = useNavigate();
+
+  const handleSignOut = () => {
+    auth.signOut();
+    navigate("/");
+  };
+
+  return (
+    <>
+      <div className="profile">
+        <div className="profileHeader">
+          <h4 className="pageHeader"> My profile</h4>
+        </div>
+        <div className="signOutBtn">
+          <button
+            type="button"
+            className="btn btn-outline btn-error"
+            onClick={handleSignOut}
+          >
+            Sign out
+          </button>
+        </div>
+      </div>
+      <div className="information">
+        <ul>
+          <li>{name}</li>
+          <li>{email}</li>
+        </ul>
+      </div>
+    </>
+  );
 }
 
 export default Profile;
