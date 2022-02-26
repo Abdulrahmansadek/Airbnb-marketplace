@@ -39,8 +39,7 @@ function SignUp() {
       updateProfile(auth.currentUser, {
         displayName: name,
       });
-      const userData = { ...formData };
-      userData.timestamp = serverTimestamp();
+      const userData = { ...formData, timestamp: serverTimestamp() };
 
       await setDoc(doc(db, "users", user.uid), userData);
 

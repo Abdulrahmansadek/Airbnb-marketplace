@@ -1,18 +1,12 @@
-import { useState, useEffect } from "react";
-import { getAuth } from "firebase/auth";
+import { useAuthentication } from "../Hooks/useAuthentication";
 
 function Home() {
-  const [user, setUser] = useState(null);
-  const auth = getAuth();
-
-  useEffect(() => {
-    setUser(auth.currentUser);
-  }, []);
+  const { isLogged, loading } = useAuthentication();
 
   return (
     <div className="text-3xl font-bold underline">
       Home
-      {user ? <h1>add your review</h1> : <h1>you cant give feedback</h1>}
+      {isLogged ? <h1>add your review</h1> : <h1>you cant give feedback</h1>}
     </div>
   );
 }
