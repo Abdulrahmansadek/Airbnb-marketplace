@@ -47,3 +47,26 @@
 .profileHeader {
   font-size: 2rem;
 }
+.apartment {
+  width: 620px;
+  height: 550px;
+  border-radius: 10px;
+}
+.houses {
+  width: 620px;
+  height: 550px;
+  border-radius: 10px;
+}
+.house-img {
+  height: 100%;
+}
+.categories-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.apartment-title {
+  border: 2px solid black;
+  padding: 4px;
+  width: 100px;
+}
