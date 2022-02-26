@@ -8,6 +8,7 @@ import SignUp from "./pages/SignUp";
 import ForgetPassword from "./pages/ForgetPassword";
 import About from "./pages/About";
 import Footer from "./components/Footer";
+import Categories from "./pages/Categories";
 import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/offers" element={<Offers />} />
           <Route path="/forget-password" element={<ForgetPassword />} />
           <Route path="/about" element={<About />} />
+          <Route path="/category/:categoryName" element={<Categories />} />
         </Routes>
         <Footer />
       </Router>
