@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import visibleIcon from "../assets/svg/visibilityIcon.svg";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { toast } from "react-toastify";
 
 function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -29,9 +30,10 @@ function SignIn() {
       const user = userCredential.user;
       if (user) {
         navigate("/");
+        toast.success("signed-in");
       }
     } catch (error) {
-      console.log(error);
+      toast.error("password or email not correct! ");
     }
   };
 

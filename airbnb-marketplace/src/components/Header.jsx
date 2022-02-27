@@ -1,11 +1,11 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import logo from "../assets/pngegg.png";
 
 function Header() {
   const navigate = useNavigate();
-  const location = useLocation();
+
   return (
     <div className="header">
       <div className="navbar container">
