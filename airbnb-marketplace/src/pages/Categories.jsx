@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import ListingItem from "../components/ListingItem";
 import {
   collection,
   getDocs,
   query,
   where,
-  orderBy,
   limit,
   startAfter,
 } from "firebase/firestore";
 import { db } from "../firebase.config";
 
 function Categories() {
-  const [listings, setListings] = useState(null);
+  const [listings, setListings] = useState([]);
   const [loading, setLoading] = useState(true);
   const params = useParams();
 
@@ -38,8 +38,9 @@ function Categories() {
         });
         setListings(listingsArr);
         setLoading(false);
-        console.log(listingsArr[0].data);
-      } catch (error) {}
+      } catch (error) {
+        console.log(error);
+      }
     };
     fetchListings();
   }, [params.categoryName]);
@@ -54,10 +55,11 @@ function Categories() {
         <>
           <ul>
             {listings.map((listing) => (
-              <>
-                <li>{listing.data.name}</li>
-                <li>{listing.data.regularPrice}</li>
-              </>
+              <ListingItem
+                key={listing.id}
+                listing={listing.data}
+                id={listing.id}
+              />
             ))}
           </ul>
         </>
