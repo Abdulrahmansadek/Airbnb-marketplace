@@ -20,13 +20,13 @@ function App() {
       <Router>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
           <Route path="/profile" element={<PrivateRoute />}>
             <Route path="/profile" element={<Profile />} />
           </Route>
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/offers" element={<Offers />} />
+          <Route path="/" element={<Home />} />
           <Route path="/forget-password" element={<ForgetPassword />} />
           <Route path="/about" element={<About />} />
           <Route path="/category/:categoryName" element={<Categories />} />
