@@ -49,8 +49,6 @@ function Categories() {
 
   return (
     <div>
-      <p>{params.categoryName === "apartment" ? "apartments" : "Houses"}</p>
-
       {loading ? (
         <Spinner />
       ) : listings && listings.length > 0 ? (
