@@ -3,9 +3,9 @@ import React from "react";
 function Footer() {
   return (
     <>
-      <footer className="p-10 footer bg-base-200 text-base-content">
+      <footer className="p-10 footer bg-base-200 text-base-content ">
         <div>
-          <span className="footer-title">Services</span>
+          <span className="footer-title ">Services</span>
           <a className="link link-hover">Branding</a>
           <a className="link link-hover">Design</a>
           <a className="link link-hover">Marketing</a>

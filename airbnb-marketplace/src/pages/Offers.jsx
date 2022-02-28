@@ -11,6 +11,7 @@ import {
 } from "firebase/firestore";
 import { db } from "../firebase.config";
 import { toast } from "react-toastify";
+import Spinner from "../components/Spinner";
 
 function Offers() {
   const [listings, setListings] = useState([]);
@@ -49,7 +50,7 @@ function Offers() {
   return (
     <div>
       {loading ? (
-        <h1>loading...</h1>
+        <Spinner />
       ) : listings && listings.length > 0 ? (
         <>
           <ul>

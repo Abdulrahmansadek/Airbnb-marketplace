@@ -18,7 +18,7 @@ function Profile() {
 
   return (
     <>
-      <div className="profile">
+      <div className="profile container mx-auto">
         <div className="profileHeader">
           <h4 className="pageHeader"> My profile</h4>
         </div>
@@ -32,8 +32,8 @@ function Profile() {
           </button>
         </div>
       </div>
-      <div className="information">
-        <ul>
+      <div className="information container mx-auto">
+        <ul className="informationList">
           <li>{name}</li>
           <li>{email}</li>
         </ul>

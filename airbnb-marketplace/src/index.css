@@ -7,6 +7,9 @@
   height: 100px;
   background-color: black;
 }
+.header:hover {
+  cursor: pointer;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -16,7 +19,6 @@
   object-fit: contain;
   height: 70px;
   width: 120px;
-  margin-left: 50px;
 }
 .nav ul {
   list-style: none;
@@ -39,27 +41,43 @@
 .profile {
   display: flex;
   justify-content: space-between;
-  border: 3px solid black;
-  margin: 20px;
-  padding: 4px;
+
+  margin-top: 20px;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+}
+.informationList li {
+  padding: 15px;
+  background-color: rgba(216, 212, 212, 0.438);
+  border-radius: 10px;
+  margin: 10px;
 }
 
 .profileHeader {
   font-size: 2rem;
 }
 .apartment {
-  max-width: 620px;
-  height: 550px;
+  max-width: 500px;
+  height: 450px;
+  margin-bottom: 50px;
+}
+.apartment img {
   border-radius: 10px;
 }
 .houses {
-  max-width: 620px;
-  height: 550px;
+  max-width: 500px;
+  height: 450px;
+  margin-bottom: 50px;
+}
+.houses img {
   border-radius: 10px;
 }
 .house-img {
   height: 100%;
 }
+
 .categories-container {
   display: flex;
   justify-content: center;
@@ -124,11 +142,99 @@
 .listingIcons {
   display: flex;
   justify-content: space-between;
-  max-width: 275px;
+  width: 275px;
   margin-top: 20px;
 }
 
 .iconText {
   font-weight: 500;
   font-size: 0.7rem;
+}
+.listingDetails {
+  margin-bottom: 10rem;
+}
+.listingName {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.listingLocation {
+  margin-top: 0;
+  font-weight: 600;
+}
+.discountPrice {
+  padding: 0.25rem 0.5rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline;
+}
+.listingPerDay {
+  padding: 0.25rem 0.5rem;
+  background-color: #00cc66;
+  color: #ffffff;
+  border-radius: 2rem;
+  display: inline;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+.listingDetailsList {
+  padding: 0;
+  list-style-type: none;
+}
+.listingDetailsList li {
+  margin: 0.3rem 0;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.listingLocationTitle {
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.leafletContainer {
+  width: 100%;
+  height: 400px;
+  overflow-x: hidden;
+  margin-bottom: 3rem;
+}
+.swiper-container {
+  min-height: 225px;
+  height: 23vw;
+}
+.swiperSlideDiv {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiperSlideImg {
+  width: 100%;
+  object-fit: cover;
+}
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #720150 transparent #720150 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
 }

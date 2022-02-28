@@ -10,7 +10,8 @@ import {
   startAfter,
 } from "firebase/firestore";
 import { db } from "../firebase.config";
-import { ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
+import Spinner from "../components/Spinner";
 
 function Categories() {
   const [listings, setListings] = useState([]);
@@ -40,7 +41,7 @@ function Categories() {
         setListings(listingsArr);
         setLoading(false);
       } catch (error) {
-        console.log(error);
+        toast.error("something went wrong");
       }
     };
     fetchListings();
@@ -51,10 +52,10 @@ function Categories() {
       <p>{params.categoryName === "apartment" ? "apartments" : "Houses"}</p>
 
       {loading ? (
-        <h1>loading...</h1>
+        <Spinner />
       ) : listings && listings.length > 0 ? (
         <>
-          <ul>
+          <ul className="container mx-auto">
             {listings.map((listing) => (
               <ListingItem
                 key={listing.id}
