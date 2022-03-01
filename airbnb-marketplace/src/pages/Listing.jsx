@@ -38,7 +38,7 @@ function Listing() {
       }
     };
     fetchListing();
-  }, [params.ListingId]);
+  }, [params.listingId]);
   if (loading) {
     return <Spinner />;
   }
