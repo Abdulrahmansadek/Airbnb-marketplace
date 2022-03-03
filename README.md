@@ -13,6 +13,16 @@ in this project i followedthe Airbnb website style , i used some packages for st
 - tailwindcss
 - react icons
 - daisy UI 
+
+## pages
+### this project has multiple pages:
+- homepage where is 2 categories apartments and houses.
+- the category page 
+- offers page
+- sign in page 
+- sign up page
+- forgete password page 
+- about page
  ## Must have 
 - [x] the app should have 2 categories one for rent and the other for sale.
 - [x] you can review the offers and see how mutch the discount price.
