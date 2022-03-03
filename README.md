@@ -13,7 +13,7 @@ in this project i followedthe Airbnb website style , i used some packages for st
  - [x] you can review the offers and see how mutch the discount price
  - [x] there is map locate the place of the house or apartment 
  - [x] the user can add new listing  only if he is a member 
- - [x] the user able to sign in by email  
+- [x] the user able to sign in by email  
  - [x] user review the app if he is signed in 
  
 
