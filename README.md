@@ -39,6 +39,7 @@ in this project i followedthe Airbnb website style , i used some packages for st
 - change profile details
 - possibility to add listing
 
- 
+ ## to start the up 
+ simply clone it , open it  npm install and finally npm start 😊
  
 
