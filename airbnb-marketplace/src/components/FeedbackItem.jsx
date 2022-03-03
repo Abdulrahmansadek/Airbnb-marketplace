@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useFeedback } from "../Hooks/useFeedback";
 import Spinner from "./Spinner";
 
@@ -12,7 +13,7 @@ function FeedbackItem() {
     <>
       <div className="container mx-auto feedbackList">
         <div className="feedbackTile">
-          <h1>Reviews</h1>
+          <h1> App Reviews</h1>
         </div>
 
         {feedback.length === 0 ? (
@@ -22,12 +23,14 @@ function FeedbackItem() {
             <div className="feedbackItem" key={idx}>
               <article className="flex items-start space-x-6 p-6">
                 <div className="min-w-0 relative flex-auto">
-                  <div className="avatar placeholder">
-                    <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
-                      <span className="text-xs">{rate.name[0]}</span>
+                  <Link to={"/profile"}>
+                    <div className="avatar placeholder">
+                      <div className="bg-neutral-focus text-neutral-content rounded-full w-8">
+                        <span className="text-xs">{rate.name[0]}</span>
+                      </div>
+                      <h3 className="profileName">{rate.name}</h3>
                     </div>
-                    <h3 className="profileName">{rate.name}</h3>
-                  </div>
+                  </Link>
                   <h2 className="font-semibold text-slate-900 mt-10 truncate pr-20">
                     {rate.title}
                   </h2>

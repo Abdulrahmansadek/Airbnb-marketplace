@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ListingItem from "../components/ListingItem";
 import {
   collection,
@@ -54,6 +54,11 @@ function Offers() {
       ) : listings && listings.length > 0 ? (
         <>
           <ul className="container mx-auto">
+            <ul>
+              <li className="titleCategory">
+                <Link to={"/"}> Home </Link> / offers
+              </li>
+            </ul>
             {listings.map((listing) => (
               <ListingItem
                 key={listing.id}

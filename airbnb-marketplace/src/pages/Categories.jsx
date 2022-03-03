@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ListingItem from "../components/ListingItem";
 
 import {
@@ -54,6 +54,21 @@ function Categories() {
       ) : listings && listings.length > 0 ? (
         <>
           <ul className="container mx-auto ">
+            <div className="titleCategory container mx-auto">
+              <div className="text-sm breadcrumbs">
+                <ul>
+                  {params.categoryName === "house" ? (
+                    <li className="titleCategory">
+                      <Link to={"/"}> Home </Link> / houses
+                    </li>
+                  ) : (
+                    <li>
+                      <Link to={"/"}>Home</Link> / apartments
+                    </li>
+                  )}
+                </ul>
+              </div>
+            </div>
             {listings.map((listing) => (
               <ListingItem
                 key={listing.id}
