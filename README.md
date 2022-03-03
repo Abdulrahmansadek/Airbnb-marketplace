@@ -1,8 +1,8 @@
 # Airbnb-marketplace
 
 
--<img width="607" alt="Screenshot 2022-03-03 at 20 50 05" src="https://user-images.githubusercontent.com/85104423/156644150-16b73daa-74d7-47d0-ba57-c6caef88ce57.png">
-
+- <img width="607" alt="Screenshot 2022-03-03 at 20 50 05" src="https://user-images.githubusercontent.com/85104423/156644150-16b73daa-74d7-47d0-ba57-c6caef88ce57.png">
+- <img width="624" alt="Screenshot 2022-03-03 at 20 51 17" src="https://user-images.githubusercontent.com/85104423/156644279-1c0eef2e-44d6-4422-ab36-da5b23cc9648.png">
 
 
 ## About the project 
