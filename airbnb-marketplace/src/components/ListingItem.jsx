@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import bedIcon from "../assets/svg/bedIcon.svg";
 import bathtubIcon from "../assets/svg/bathtubIcon.svg";

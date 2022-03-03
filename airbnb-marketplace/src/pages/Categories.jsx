@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ListingItem from "../components/ListingItem";
+
 import {
   collection,
   getDocs,
@@ -26,7 +27,6 @@ function Categories() {
         const q = query(
           listingsRef,
           where("type", "==", params.categoryName),
-
           limit(10)
         );
 
@@ -53,7 +53,7 @@ function Categories() {
         <Spinner />
       ) : listings && listings.length > 0 ? (
         <>
-          <ul className="container mx-auto">
+          <ul className="container mx-auto ">
             {listings.map((listing) => (
               <ListingItem
                 key={listing.id}

@@ -11,7 +11,7 @@ export const useAuthentication = () => {
       }
       setLoading(false);
     });
-  });
+  }, []);
 
   return { isLogged, loading };
 };

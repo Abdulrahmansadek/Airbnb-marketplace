@@ -53,7 +53,7 @@ function Offers() {
         <Spinner />
       ) : listings && listings.length > 0 ? (
         <>
-          <ul>
+          <ul className="container mx-auto">
             {listings.map((listing) => (
               <ListingItem
                 key={listing.id}
