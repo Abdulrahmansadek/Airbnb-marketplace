@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link, NavLink } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import logo from "../assets/pngegg.png";
 
@@ -15,27 +15,16 @@ function Header() {
 
         <div className="nav">
           <ul>
-            <li
-              onClick={() => {
-                navigate("/");
-              }}
-            >
-              Home
-            </li>
-            <li
-              onClick={() => {
-                navigate("/offers");
-              }}
-            >
-              Offers
-            </li>
-            <li
-              onClick={() => {
-                navigate("/about");
-              }}
-            >
-              About
-            </li>
+            <NavLink to="/" activeclassname="active">
+              <li>Home</li>
+            </NavLink>
+
+            <NavLink to="/offers">
+              <li>Offers</li>
+            </NavLink>
+            <NavLink to="/about">
+              <li>About</li>
+            </NavLink>
           </ul>
         </div>
         <div

@@ -10,7 +10,7 @@ function AddFeedback() {
     id: auth.currentUser.uid,
     name: auth.currentUser.displayName,
     title: "",
-    rate: 4,
+    rate: 5,
   });
   const { id, name, title, rate } = addFeedback;
 
@@ -73,7 +73,6 @@ function AddFeedback() {
             type="radio"
             name="rating-2"
             className="mask mask-star-2 bg-orange-400"
-            checked
           />
           <input
             value={5}

@@ -14,9 +14,9 @@ const Home = () => {
         <img src={camping} className="campingImage" alt={camping} />
       </div>
       <div className="categories-container container mx-auto home">
-        <div className="grid grid-cols-1 gap-8 xl:grid-cols-2  md:grid-cols-1 ">
+        <div className="grid grid-cols-1 gap-20 xl:grid-cols-2  md:grid-cols-1  ">
           <Link to={"/category/apartment"}>
-            <div className="apartment">
+            <div className="apartment ">
               <img src={amster} alt="apartment" className="house-img" />
               <div className="apartmentText">
                 <h1>Rent your apartment here </h1>
@@ -30,10 +30,10 @@ const Home = () => {
           </Link>
 
           <Link to={"/category/house"}>
-            <div className="apartment">
+            <div className="apartment ">
               <img src={rentHouse} alt="house" className="house-img" />
               <div className="apartmentText">
-                <h1>Looking for big place to stay ? </h1>
+                <h1>Looking for big place to stay ? Explore houses</h1>
               </div>
               <div className="exploreBtn">
                 <button className="btn btn-outline btn-accent">
@@ -47,7 +47,18 @@ const Home = () => {
 
       <FeedbackItem />
 
-      {isLogged && <AddFeedback />}
+      {isLogged ? (
+        <AddFeedback />
+      ) : (
+        <div className="container mx-auto">
+          <Link to={"/sign-in"}>
+            {" "}
+            <button className="btn btn-active btn-accent mb-10 ">
+              review my App
+            </button>
+          </Link>
+        </div>
+      )}
     </>
   );
 };

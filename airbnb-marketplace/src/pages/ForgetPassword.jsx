@@ -21,7 +21,7 @@ function ForgetPassword() {
     }
   };
   return (
-    <div className="container mx-auto pageContainer">
+    <div className="container mx-auto pageContainer  aboutContainer">
       <header>
         <p className="pageHeader"> Forgot Password</p>
       </header>
