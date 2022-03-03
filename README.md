@@ -1,5 +1,5 @@
 # Airbnb-marketplace
-<img width="607" alt="Screenshot 2022-03-03 at 20 50 05" src="https://user-images.githubusercontent.com/85104423/156643032-0e9eefe8-739b-4cc1-b3bc-9d2e0dee0108.png">
+
 ## About the project 
 is React project for houses you can add listing and preview the others as well 
 i'm going to use firebase to build the database 
