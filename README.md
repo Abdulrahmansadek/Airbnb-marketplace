@@ -6,10 +6,10 @@
 
 
 ## About the project 
-is React project for houses you can add listing and preview the others as well 
-i'm going to use firebase to build the database 
+is React project for houses you display the listings of apartments
+in this App, I used firebase as a database to review the listings and handle the authentication 
 ## styling 
-in this project i followedthe Airbnb website style , i used some packages for styling such:
+in this App I followed the Airbnb website style, I used some packages for styling such:
 - tailwindcss
 - react icons
 - daisy UI 
@@ -19,28 +19,28 @@ in this project i followedthe Airbnb website style , i used some packages for st
 - homepage where is 2 categories apartments and houses.
 - the category page 
 - offers page
-- sign in page 
+- sign-in page 
 - sign up page
-- forgete password page 
+- forget the password page 
 - about page
  ## Must have 
 - [x] the app should have 2 categories one for rent and the other for sale.
-- [x] you can review the offers and see how mutch the discount price.
-- [x] there is map locate the place of the house or apartment .
-- [x] the user can add new listing  only if he is a member .
-- [x] the user able to sign in by email.
-- [x] user review the app if he is signed in .
+- [x] you can review the offers and see how much the discount price.
+- [x] there is a map locate the place of the house or apartment.
+- [x] the user can add a new listing only if he is a member.
+- [x] the user is able to sign in by email.
+- [x] user reviews the app if he is signed in.
  
 
  
 
 ## nice to have 
-- possibility to search for appartments by location
+- possibility to search for apartments by location
 - change profile details
-- possibility to add listing
+- possibility to add a listing
 
  ## to start the up 
- simply clone it , open it  npm install and finally npm start 😊
+ simply clone it, open it npm install, and finally npm start 😊
  
  ## demo
  <a href='https://loving-varahamihira-45d183.netlify.app'> Demo </a>
