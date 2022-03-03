@@ -42,4 +42,6 @@ in this project i followedthe Airbnb website style , i used some packages for st
  ## to start the up 
  simply clone it , open it  npm install and finally npm start 😊
  
+ ## demo
+ <a>https://loving-varahamihira-45d183.netlify.app</a>
 
