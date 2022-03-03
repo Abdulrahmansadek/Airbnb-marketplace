@@ -368,4 +368,10 @@
   .feedbackList {
     width: 80%;
   }
+  .house-img {
+    margin-bottom: 50px;
+    max-width: 100%;
+    height: 360px;
+    border-radius: 10px;
+  }
 }
