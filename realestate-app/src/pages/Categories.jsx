@@ -48,7 +48,7 @@ function Categories() {
   }, [params.categoryName]);
 
   return (
-    <div>
+    <div className="itemsContainer">
       {loading ? (
         <Spinner />
       ) : listings && listings.length > 0 ? (
