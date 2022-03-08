@@ -6,7 +6,7 @@
   position: relative;
 }
 .header {
-  max-width: 100%;
+  width: 100%;
   height: 100px;
   background-color: black;
 }
@@ -72,6 +72,9 @@
   display: flex;
   flex-direction: column;
 }
+.informationList {
+  height: 66vh;
+}
 .informationList li {
   padding: 15px;
   background-color: rgba(216, 212, 212, 0.438);
@@ -107,6 +110,7 @@
 }
 
 .categories-container {
+  max-width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -143,9 +147,10 @@
   object-fit: cover;
 }
 .categoryListingDetails {
-  max-width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
+  margin-top: -80px;
 }
 .categoryListingLocation {
   font-weight: 600;
@@ -334,7 +339,7 @@
   margin-left: 20px;
 }
 .aboutContainer {
-  height: 450px;
+  height: 73vh;
 }
 @media (max-width: 600px) {
   .categoryListing {
@@ -396,13 +401,11 @@
   .categoryListing {
     max-width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+    justify-content: space-evenly;
+
     position: relative;
     border-radius: 20px;
-    margin: 20px;
-    padding: 12px;
+    padding-top: -10px;
     background-color: rgba(241, 240, 240, 0.527);
     box-sizing: border-box;
   }
@@ -412,25 +415,67 @@
 
   .listingIcons {
     display: flex;
-    flex-direction: column;
   }
   .listingIcons img {
     width: 20px;
   }
   .categoryListingDetails {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
+    height: 50%;
   }
   .header {
     width: 100%;
   }
 }
 @media (max-width: 390px) {
+  .categoryListingLink {
+    max-width: 100%;
+    margin-bottom: 10px;
+
+    padding: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+    position: relative;
+    border-radius: 20px;
+    padding-top: -10px;
+    background-color: rgba(241, 240, 240, 0.527);
+    box-sizing: border-box;
+  }
+
+  .categoryListingName {
+    font-size: 1rem;
+  }
+  .categoryListingPrice {
+    font-size: 0.75rem;
+  }
+  .listingIcons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+  }
+
   .house-img {
     margin-bottom: 50px;
     width: 100%;
     height: 360px;
     border-radius: 10px;
+  }
+  .header {
+    width: 110%;
+  }
+  .footer {
+    width: 110%;
+  }
+  .swiper-container {
+    width: 110%;
+  }
+  .leafletContainer {
+    width: 100%;
+  }
+  .pictureHome {
+    width: 110%;
+  }
+  .categories-container {
+    margin: 20px;
   }
 }
